@@ -38,8 +38,6 @@ while scrolling:
         break
     all_hotels = WebDriverWait(driver, 5).until(EC.presence_of_all_elements_located((By.XPATH, '//*[@class="uitk-heading uitk-heading-5 overflow-wrap uitk-layout-grid-item uitk-layout-grid-item-has-row-start"]')))
     all_locations = WebDriverWait(driver, 5).until(EC.presence_of_all_elements_located((By.XPATH, '//*[@class="uitk-text uitk-text-spacing-half truncate-lines-2 uitk-type-300 uitk-text-default-theme"]')))
-    #all_hotels = driver.find_elements(By.XPATH, value='//*[@class="uitk-heading uitk-heading-5 overflow-wrap uitk-layout-grid-item uitk-layout-grid-item-has-row-start"]')
-    #all_locations = driver.find_elements(By.XPATH, value='//*[@class="uitk-text uitk-text-spacing-half truncate-lines-2 uitk-type-300 uitk-text-default-theme"]')
     for hotel in all_hotels:
         hotel_count += 1
         first_ten_hotels.append(hotel.text)
