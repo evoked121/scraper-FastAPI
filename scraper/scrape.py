@@ -44,6 +44,7 @@ while scrolling:
     for location in all_locations:
         location_count += 1
         first_ten_locations.append(location.text)
+        #comment
     
     last_height = driver.execute_script("return document.body.scrollHeight")
     while True:
