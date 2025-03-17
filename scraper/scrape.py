@@ -59,7 +59,6 @@ while scrolling:
 
 print(first_ten_hotels)
 print(first_ten_locations)
-#..
 
 driver.quit()
 #ee
